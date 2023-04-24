@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "601031963099",
+    "project_id": "edu-solution-assistant",
+    "storage_bucket": "edu-solution-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601031963099:android:263b2e154bc0d2981fb7fe",
+        "android_client_info": {
+          "package_name": "com.tgb.edusolutionassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601031963099-p23oqr6htr4naf8vlkl8rcrlfgofj2bc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcmmY5aqeZrldqBlS7U_I5NnSjoCrd-gY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601031963099-p23oqr6htr4naf8vlkl8rcrlfgofj2bc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

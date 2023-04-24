@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrd2"
+    tools:context=".LoginActivity">
+
+    <!--Status Bar-->
+
+    <RelativeLayout
+        android:id="@id/toolbarRL"
+        style="@style/Main_Frame">
+
+        <!--back button-->
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            style="@style/Main_Frame_Back"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <!--logo image-->
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/iconIv"
+            style="@style/Main_Frame_Logo"/>
+
+        <!--text view of heading-->
+
+        <TextView
+            style="@style/Main_Frame_Heading"
+            android:text="@string/final_step_in_creating_account"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--DOB-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dobTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_of_image1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_dob">
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/dobEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/rl_of_image1"
+                        android:contentDescription="@string/todo"
+                        android:padding="10dp"
+                        android:entries="@array/Age_options"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--BOOKS OF CURRENT COURSE-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/BkccTit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dobTil"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_of_image2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/baseline_book_current">
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/BkccEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/rl_of_image2"
+                        android:contentDescription="@string/todo"
+                        android:padding="10dp"
+                        android:entries="@array/Books_For_Current_Course_options"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Course year-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CryrTit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BkccTit"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_of_image4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/baseline_book_current">
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/CryrEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/rl_of_image4"
+                        android:contentDescription="@string/todo"
+                        android:padding="10dp"
+                        android:entries="@array/current_course_year_options"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--CURRENT COURSE MODE-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CcmTit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CryrTit"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_of_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/baseline_book_current">
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/CcmEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/rl_of_image"
+                        android:contentDescription="@string/todo"
+                        android:padding="10dp"
+                        android:entries="@array/current_course_mode_options"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Future Course Name-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/FcnTit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CcmTit"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_of_image3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/baseline_book_current">
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/FcnEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/rl_of_image3"
+                        android:contentDescription="@string/todo"
+                        android:padding="10dp"
+                        android:entries="@array/Books_For_Future_Course_options"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--FUTURE GOALS-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/FgTit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FcnTit"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/FgEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01"
+                    android:drawableStart="@drawable/baseline_book_current"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/future_goals"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey01"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--BOOKS OF INTREST-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/BkiTit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FgTit"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_of_image5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/baseline_book_current">
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/BkiEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/rl_of_image5"
+                        android:contentDescription="@string/todo"
+                        android:padding="10dp"
+                        android:entries="@array/Books_Of_Intrest_options"
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Register Button-->
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BkiTit"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_button01"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                tools:ignore="VisualLintButtonSize" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

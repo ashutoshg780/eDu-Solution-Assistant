@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrd2"
+    android:orientation="vertical"
+    tools:context=".BookActivity">
+
+    <!--Status Bar-->
+
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+        <!--Displayed User's Name-->
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/Dashboard_User"
+            tools:ignore="RelativeOverlap"/>
+
+        <!--Displayed Email of User-->
+
+        <TextView
+            android:id="@+id/subTitleTv"
+            style="@style/Dashboard_UserName"/>
+
+        <!--Logout Button-->
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            style="@style/Logout_Icon"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Card for Search Bar-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_search"
+                style="@style/Searchbar_Card">
+
+                <!--Search Bar-->
+
+                <SearchView
+                    android:id="@+id/search_books"
+                    style="@style/Searchbar">
+
+                </SearchView>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--card view for books Heading-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_headling"
+                style="@style/Heading_List_Card">
+
+                <!--Text view of book heading-->
+
+                <TextView
+                    android:id="@+id/heading_title"
+                    style="@style/Heading_List" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Card for book layout-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                style="@style/Card_View_List"
+                tools:ignore="TextSizeCheck">
+
+
+                <GridLayout
+                    android:id="@+id/grid_books"
+                    style="@style/Grid_Layout">
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook1"
+                            style="@style/Books_Notes_Tutorial_List_Image">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_0"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook1"
+                            android:layout_alignEnd="@+id/cardBook1"
+                            android:layout_alignBottom="@+id/cardBook1">
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook2"
+                            style="@style/Books_Notes_Tutorial_List_Image">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_1"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook2"
+                            android:layout_alignEnd="@+id/cardBook2"
+                            android:layout_alignBottom="@+id/cardBook2">
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook3"
+                            style="@style/Books_Notes_Tutorial_List_Image">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_2"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook3"
+                            android:layout_alignEnd="@+id/cardBook3"
+                            android:layout_alignBottom="@+id/cardBook3">
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook4"
+                            style="@style/Books_Notes_Tutorial_List_Image">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_3"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook4"
+                            android:layout_alignEnd="@+id/cardBook4"
+                            android:layout_alignBottom="@+id/cardBook4">
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook5"
+                            style="@style/Books_Notes_Tutorial_List_Image">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_4"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook5"
+                            android:layout_alignEnd="@+id/cardBook5"
+                            android:layout_alignBottom="@+id/cardBook5">
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook6"
+                            style="@style/Books_Notes_Tutorial_List_Image">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_5"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook6"
+                            android:layout_alignEnd="@+id/cardBook6"
+                            android:layout_alignBottom="@+id/cardBook6">
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook7"
+                            style="@style/Books_Notes_Tutorial_List_Image"
+                            tools:ignore="ImageContrastCheck">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_6"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook7"
+                            android:layout_alignEnd="@+id/cardBook7"
+                            android:layout_alignBottom="@+id/cardBook7">
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook8"
+                            style="@style/Books_Notes_Tutorial_List_Image">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_7"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook8"
+                            android:layout_alignEnd="@+id/cardBook8"
+                            android:layout_alignBottom="@+id/cardBook8">
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <!--imageview of books-->
+
+                    <RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/cardBook9"
+                            style="@style/Books_Notes_Tutorial_List_Image"
+                            tools:ignore="ImageContrastCheck">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/rate_8"
+                            style="@style/Books_Notes_Tutoria_List_Rating"
+                            android:layout_alignStart="@+id/cardBook9"
+                            android:layout_alignEnd="@+id/cardBook9"
+                            android:layout_alignBottom="@+id/cardBook9">
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

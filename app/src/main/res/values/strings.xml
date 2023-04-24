@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">eDu Solution Assistant</string>
+    <string name="type_your_email">Type your Email</string>
+    <string name="type_your_password">Type Your Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="retype_your_password">Retype Your Password</string>    <string name="not_registered_yet_sign_up">Not Registered Yet , Sign Up !</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="already_registered_sign_in">Already Registered , Sign In !</string>
+    <string name="todo">TODO</string>
+    <string name="abc_example_com">abc@example.com</string>
+    <string name="dashboard_admin">Dashboard Admin</string>
+    <string name="dashboard_user">Dashboard User</string>
+    <string name="edu_Solution_Assistant">eDu Solution Assistant</string>
+    <string name="welcome_to_edu_solution_assistant">Welcome to eDu Solution Assistant</string>
+    <string name="new_user_signup">New User? <b>SignUp</b></string>
+    <string name="please_login">Please Login</string>
+    <string name="current_course">CURRENT COURSE</string>
+    <string name="notes">Notes</string>
+    <string name="books">Books</string>
+    <string name="videos">Videos</string>
+    <string name="future_course">FUTURE COURSE</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="login">Login</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="continue_without_login">Continue without Login</string>
+    <string name="final_step_in_creating_account">Final Step in Creating Account</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="books_for_current_course">BOOKS FOR CURRENT COURSE</string>
+    <string name="current_course_year">CURRENT COURSE YEAR</string>
+    <string name="current_course_mode">CURRENT COURSE MODE</string>
+    <string name="future_course_name">FUTURE COURSE NAME</string>
+    <string name="future_goals">FUTURE GOALS</string>
+    <string name="books_of_intrest">BOOKS OF INTREST</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset">Reset</string>
+    <string name="genre">Genre</string>
+    <string name="book_title">book_Title:</string>
+    <string name="book_genre">book_Genre:</string>
+    <string name="book_author">book_Author:</string>
+    <string name="book_rating">book_Rating</string>
+    <string name="description">Description</string>
+    <string name="for_people_who_want_to_enjoy_an_intriguing_fast_paced_novel_harry_potter_and_the_sorcerer_s_stone_is_the_perfect_book_to_read_it_keeps_you_involved_throughout_the_book_as_most_chapters_have_cliffhangers_at_the_end_this_novel_is_the_first_of_the_seven_famous_harry_potter_books_by_j_k_rowling">For people who want to enjoy an intriguing, fast paced novel, Harry Potter and the Sorcerer’s Stone is the perfect book to read. It keeps you involved throughout the book as most chapters have cliffhangers at the end. This novel is the first of the seven famous Harry Potter books by J.K. Rowling.</string>
+    <string name="books_description">Books are a versatile medium that have the power to entertain and educate, while also improving cognitive function, reducing stress, and increasing empathy. While e-books and audiobooks are convenient, physical books offer a special experience. Books are a timeless medium that continue to captivate and enrich readers of all ages.</string>
+    <string name="notes_description">Notes are an essential tool for organizing and retaining information. Whether taken by hand or digitally, notes help improve memory and aid in the learning process. By summarizing key points and ideas, notes can be used for reference and review, making them a valuable asset in academic and professional settings.</string>
+    <string name="videos_description">Videos, particularly tutorials, are a powerful medium for learning and skill-building. Visual and auditory aids can enhance understanding and retention, while step-by-step demonstrations provide a clear and practical approach. Accessible online, videos allow for self-paced learning and the ability to revisit material as needed, making them a popular educational resource.</string>
+    <string name="note_title">note_Title:</string>
+    <string name="note_subject">note_Subject:</string>
+    <string name="student_name">Student_name:</string>
+    <string name="note_rating">note_Rating</string>
+    <string name="video_title">video_Title:</string>
+    <string name="video_subject">video_Subject:</string>
+    <string name="video_rating">video_Rating</string>
+    <string name="star_5">✪✪✪✪✪</string>
+    <string name="genre_or_subject">genre/subject</string>
+    <string name="course">course</string>
+    <string name="author">author</string>
+    <string name="title">Title</string>
+    <string name="rating">Rating</string>
+    <string name="age">Age</string>
+
+    <string-array name="Age_options">
+        <item>Age Group</item>
+        <!--        <item>Below 7 years</item>-->
+        <!--        <item>7–12 years</item>-->
+        <!--        <item>12–15 years</item>-->
+        <!--        <item>15–18 years</item>-->
+        <item>18–24 years</item>
+        <item>24–30 years</item>
+        <!--        <item>30–45 years</item>-->
+        <!--        <item>45–55 years</item>-->
+        <!--        <item>Adobe 60 years</item>-->
+    </string-array>
+
+    <string-array name="Books_For_Current_Course_options">
+        <item>CURRENTLY PURSUING</item>
+        <item>BCA</item>
+        <item>BCOM</item>
+    </string-array>
+
+    <string-array name="current_course_year_options">
+        <item>SEMESTER</item>
+        <item>SEMESTER-1</item>
+        <item>SEMESTER-2</item>
+        <item>SEMESTER-3</item>
+        <item>SEMESTER-4</item>
+        <item>SEMESTER-5</item>
+        <item>SEMESTER-6</item>
+    </string-array>
+
+    <string-array name="current_course_mode_options">
+        <item>COURSE MODE</item>
+        <item>ONLINE</item>
+        <item>OFFLINE</item>
+    </string-array>
+
+    <string-array name="Books_For_Future_Course_options">
+        <item>FUTURE REFERENCE</item>
+        <item>MCA</item>
+        <item>MCOM</item>
+    </string-array>
+
+    <string-array name="Books_Of_Intrest_options">
+        <item>GENRE</item>
+        <item>NON-FICTION</item>
+        <item>BUSINESS</item>
+    </string-array>
+
+</resources>

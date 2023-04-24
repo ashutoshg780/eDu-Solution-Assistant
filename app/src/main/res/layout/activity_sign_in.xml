@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrd2"
+    tools:context=".SignInActivity">
+
+    <!--Status Bar-->
+
+    <RelativeLayout
+        android:id="@id/toolbarRL"
+        style="@style/Main_Frame">
+
+        <!--logo image-->
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/iconIv"
+            style="@style/Main_Frame_Logo"/>
+
+        <TextView
+            style="@style/Main_Frame_Heading"
+            android:text="@string/please_login"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--email-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01"
+                    android:drawableStart="@drawable/ic_email_grey"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey01"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--password-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailTit"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edittext01"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey01"
+                    tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Forget Password-->
+
+            <TextView
+                android:id="@+id/forgetTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordTit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="@string/forget_password"
+                android:textColor="@color/grey02"
+                tools:ignore="TextContrastCheck" />
+
+            <!--login-->
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forgetTv"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_button01"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                tools:ignore="VisualLintButtonSize" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--New User-->
+
+    <TextView
+        android:id="@+id/noAccountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/new_user_signup"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>

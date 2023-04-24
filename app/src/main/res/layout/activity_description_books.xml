@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrd2"
+    tools:context=".BookDescriptionActivity">
+
+    <!--Status Bar-->
+
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+        <!--Displayed User's Name-->
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/Dashboard_User"
+            tools:ignore="RelativeOverlap"/>
+
+        <!--Displayed Email of User-->
+
+        <TextView
+            android:id="@+id/subTitleTv"
+            style="@style/Dashboard_UserName"/>
+
+        <!--Logout Button-->
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            style="@style/Logout_Icon"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck"
+            android:contentDescription="@string/todo" />
+
+    </RelativeLayout>
+
+    <!--Card view for books-->
+
+    <!--card view for books Heading-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_headling"
+        style="@style/Heading_List_Card_Description">
+
+        <!--Text view of book heading-->
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Heading_List"
+            android:text="@string/title"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/Description_Card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@id/book_Rl"
+                style="@style/Description_Book_Layout">
+
+                <!--image of books-->
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/todo">
+                </ImageView>
+
+            </RelativeLayout>
+
+            <!--text view of book title-->
+
+            <!--text view of book genre-->
+
+            <TextView
+                android:id="@+id/subject"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/book_Rl"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/course">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/course_genra"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/book_Rl"
+                android:maxLines="1"
+                android:text="@string/genre_or_subject"
+                android:layout_below="@+id/subject"
+                android:ellipsize="end">
+            </TextView>
+
+            <!--text view of book author-->
+
+            <TextView
+                android:id="@+id/author_weiterby_channel"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/book_Rl"
+                android:maxLines="1"
+                android:text="@string/author"
+                android:layout_below="@id/course_genra"
+                android:ellipsize="end">
+            </TextView>
+
+            <!--text view of book rating-->
+
+            <TextView
+                android:id="@+id/rating"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/book_Rl"
+                android:maxLines="1"
+                android:text="@string/rating"
+                android:layout_below="@+id/author_weiterby_channel"
+                android:ellipsize="end">
+            </TextView>
+
+            <!--text view of book description title-->
+
+            <TextView
+                android:id="@+id/book_description_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/book_Rl"
+                android:layout_centerHorizontal="true"
+                android:text="@string/description"
+                style="@style/TextAppearance.MaterialComponents.Headline6">
+            </TextView>
+
+            <!--text view of book description-->
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_description_head"
+                android:padding="10dp"
+                android:text="@string/books_description"
+                tools:ignore="VisualLintLongText">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
